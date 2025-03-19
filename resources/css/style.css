@@ -31,9 +31,6 @@ html {
   display: flex;
   align-items: center;
 }
-.desktop_logo{
-
-}
 
 @media only screen and (max-width: 760px) {
   .main-content {
@@ -58,10 +55,13 @@ header .content {
 
 header .logo {
   flex: 1;
+  text-decoration: none;
 }
 
 header nav ul {
   display: flex;
+  text-decoration: none;
+  list-style: none;
 }
 
 nav li {
@@ -73,6 +73,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 header .icon {
