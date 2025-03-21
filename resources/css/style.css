@@ -7,7 +7,7 @@ html {
 
 .main-content {
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
+  /* top: 5.3125rem;  */
 }
 
 .center {
@@ -21,6 +21,7 @@ html {
 }
 
 .image-container {
+  display: flex;
   overflow: hidden;
 }
 
@@ -32,12 +33,8 @@ html {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
+  align-content: center;
+  flex-direction: column;
 }
 
 /* Header */
@@ -87,42 +84,12 @@ header .mobile {
 }
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   background-image: url("../images/banner-landingpage.jpg");
-}
-
-@media only screen and (max-width: 760px) {
-  header .desktop {
-    display: none;
-  }
-
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
-
-  header .content {
-    padding: 0.5rem 0;
-  }
-
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  header .mobile li {
-    padding: 0;
-  }
-
-  header .mobile .button {
-    padding: 0.1875rem 0.5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
+  background-size: cover;
 }
 
 /* Sign Up Section */
@@ -176,6 +143,164 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
+/* Features Section */
+
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem;
+  margin: 0px 1.25rem;
+  background-color: white;
+}
+
+.feature .image-container {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+.feature h2 {
+  padding-bottom: 0.5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+/* Filters Section */
+
+#filters-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  background-color: #4a4a4a;
+}
+
+#filters-section .content {
+  padding: 0 0.625rem;
+  margin-bottom: 5rem;
+}
+
+#filters-section .content h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+#filters-section .content h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+}
+
+#filters-section .images-container {
+  display: flex;
+  max-width: 100%;
+  padding: 0 1%;
+}
+
+/* Quotes Section */
+
+#quotes-section {
+  background-color: #f3f3f3;
+}
+.content-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+#quotes-section content {
+  padding: 5rem 0;
+}
+
+#quotes-section quote {
+  padding-right: 1.875rem;
+  font-family: "Palatino", serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+#quotes-section quote-citation {
+  height: 1.875rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: 0.75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+/* Media Quieries */
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Media Quieries Header */
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 0.5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: 0.1875rem 0.5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+/* media quieries signup */
 @media only screen and (max-width: 760px) {
   #sign-up-section {
     align-items: center;
@@ -222,41 +347,7 @@ header .mobile {
   }
 }
 
-/* Features Section */
-
-#features-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
-  background-color: #f3f3f3;
-}
-
-.feature {
-  flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
-  background-color: white;
-}
-
-.feature .image-container {
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
-}
-
-.feature h2 {
-  padding-bottom: 0.5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: #4a4a4a;
-}
-
-.feature h3 {
-  font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #4a4a4a;
-}
+/* media quieries Features Section */
 
 @media only screen and (max-width: 890px) {
   .feature h2 {
@@ -281,36 +372,6 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
-}
-
-/* Filters Section */
-
-#filters-section {
-  padding: 4rem 0;
-  background-color: #4a4a4a;
-}
-
-#filters-section .content {
-  padding: 0 0.625rem;
-  margin-bottom: 5rem;
-}
-
-#filters-section .content h2 {
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: white;
-}
-
-#filters-section .content h3 {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 300;
-  color: white;
-}
-
-#filters-section .images-container {
-  max-width: 100%;
-  padding: 0 1%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -343,28 +404,7 @@ header .mobile {
   }
 }
 
-/* Quotes Section */
-
-#quotes-section {
-  background-color: #f3f3f3;
-}
-
-#quotes-section content {
-  padding: 5rem 0;
-}
-
-#quotes-section quote {
-  padding-right: 1.875rem;
-  font-family: "Palatino", serif;
-  font-size: 1.875rem;
-  line-height: 1.1;
-  font-style: italic;
-  color: #4a4a4a;
-}
-
-#quotes-section quote-citation {
-  height: 1.875rem;
-}
+/* media quieries Quotes Section */
 
 @media only screen and (max-width: 760px) {
   #quotes-section content {
@@ -383,22 +423,7 @@ header .mobile {
   }
 }
 
-/* Footer */
-
-footer {
-  background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
-}
-
-footer .content {
-  color: white;
-  display: flex;
-  font-size: 0.75rem;
-}
-
-footer .copyright {
-  flex-grow: 1;
-}
+/* media quieries Footer */
 
 @media only screen and (min-width: 760px) {
   footer .content {
