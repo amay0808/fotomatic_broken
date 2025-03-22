@@ -23,9 +23,12 @@ html {
 .image-container {
   display: flex;
   overflow: hidden;
+  justify-content: center;
 }
 
 .image-container img {
+  height: 95%;
+  width: 90%;
   display: block;
 }
 .content {
