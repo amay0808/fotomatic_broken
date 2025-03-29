@@ -7,7 +7,6 @@ html {
 
 .main-content {
   position: relative;
-  /* top: 5.3125rem; */
 }
 
 .center {
@@ -42,7 +41,7 @@ html {
 /* Header */
 
 header {
-  width: 100%;
+  /* width: 100%; */
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -55,8 +54,12 @@ header .content {
 }
 
 header .logo {
+  font-family: "Roboto Mono", monospace;
   flex: 1;
   text-decoration: none;
+  color: #4a4a4a;
+  font-size: 1.5remx;
+  font-weight: 300;
 }
 
 header nav ul {
@@ -70,9 +73,11 @@ nav li {
 }
 
 nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   vertical-align: bottom;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 16px;
   color: #4a4a4a;
   text-decoration: none;
 }
@@ -101,7 +106,7 @@ header .mobile {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 43.5rem;
+  /* height: 43.5rem; */
 }
 
 #sign-up-cta {
@@ -114,9 +119,10 @@ header .mobile {
 
 #sign-up-cta .content {
   width: 25.625rem;
+  height: auto;
   margin-top: 2rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
+  font-family: "Rubick", sans-serif;
+  font-size: 50px;
   line-height: 1.4;
   color: white;
 }
@@ -223,7 +229,7 @@ header .mobile {
 #filters-section .images-container img {
   width: 25%;
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 /* Quotes Section */
 
