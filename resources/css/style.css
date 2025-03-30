@@ -41,7 +41,7 @@ html {
 /* Header */
 
 header {
-  /* width: 100%; */
+  width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -91,71 +91,73 @@ header .mobile {
   display: none;
 }
 .banner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   background-image: url("../images/banner-landingpage.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Sign Up Section */
-
-#sign-up-section {
+.join_waiting_list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* height: 43.5rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #9dc20a;
+  width: 600px;
+  height: 400px;
+  margin-top: 170px;
+  margin-bottom: 170px;
 }
 
-#sign-up-cta {
-  margin-left: 100px;
-  padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
-  background-color: #9dc20b;
-}
-
-#sign-up-cta .content {
-  width: 25.625rem;
-  height: auto;
-  margin-top: 2rem;
-  font-family: "Rubick", sans-serif;
-  font-size: 50px;
-  line-height: 1.4;
+.join_waiting_list h1 {
+  font-family: "Damion", cursive;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  line-height: 1.2;
+  font-weight: bold;
   color: white;
 }
-
-#sign-up-cta h1 {
-  font-size: 3.125rem;
-}
-
-#sign-up-cta h2 {
-  font-size: 2.25rem;
-}
-
-#sign-up-cta span strong {
-  font-weight: bold;
-}
-
-#sign-up-cta .cursive {
-  font-family: "Damion", cursive;
-}
-
-#sign-up-cta .striking {
+.join_waiting_list h2 {
   font-family: "Rubik", sans-serif;
-  padding-bottom: 0.75rem;
+  font-size: 50px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  line-height: 1.4;
+  font-weight: normal;
+  color: white;
 }
-
-#sign-up-cta .button {
+.email {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  /* max-width: 100%; */
-  margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.email .button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin-top: 26px;
+  border-radius: 4px;
+  width: 408px;
+  height: 64px;
+  background-color: #4a4a4a;
 }
 
+.email .button:hover {
+  cursor: pointer;
+}
 /* Features Section */
 
 #features-section {
