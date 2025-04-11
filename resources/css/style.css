@@ -163,11 +163,10 @@ header .mobile {
 /* Features Section */
 
 #features-section {
-  margin-bottom: 46px;
+  padding: 46px;
   gap: 38px;
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
   background-color: #f3f3f3;
 }
 
