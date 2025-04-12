@@ -344,7 +344,7 @@ footer .copyright {
     height: 28rem;
   }
 
-  #sign-up-cta {
+  .join_waiting_list {
     position: static;
     width: auto;
     height: auto;
@@ -356,7 +356,7 @@ footer .copyright {
     margin-top: 0;
   }
 
-  #sign-up-cta .email {
+  .email {
     display: none;
   }
 
